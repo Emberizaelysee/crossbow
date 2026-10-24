@@ -1,0 +1,10 @@
+{
+  "brave": {
+    "processes": 12,
+    "pssMB": 333.8
+  },
+  "firefox": {
+    "processes": 12,
+    "pssMB": 485.9
+  }
+}

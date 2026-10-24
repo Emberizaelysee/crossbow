@@ -1,0 +1,45 @@
+{
+  "checks": {
+    "page receives clicks at rest": true,
+    "brief pass over the edge does not reveal": true,
+    "left edge reveals after dwell": true,
+    "left panel stays open while hovered": true,
+    "page outside an open panel receives clicks": true,
+    "left panel hides after leaving": true,
+    "right edge reveals after dwell": true,
+    "right panel stays open while hovered": true,
+    "right panel hides after leaving": true,
+    "top edge reveals after dwell": true,
+    "top panel stays open while hovered": true,
+    "top panel hides after leaving": true,
+    "bottom edge reveals after dwell": true,
+    "bottom panel stays open while hovered": true,
+    "bottom panel hides after leaving": true
+  },
+  "latencyMs": {
+    "left": {
+      "median": 17.4,
+      "max": 18.6,
+      "n": 5
+    },
+    "right": {
+      "median": 9.3,
+      "max": 14.4,
+      "n": 5
+    },
+    "top": {
+      "median": 17.5,
+      "max": 29.1,
+      "n": 5
+    },
+    "bottom": {
+      "median": 13.4,
+      "max": 16.4,
+      "n": 5
+    }
+  },
+  "idleCpuPercent": {
+    "zones": 0,
+    "poll": 1.2
+  }
+}

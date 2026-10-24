@@ -89,14 +89,14 @@ Priorities: **Must** (needed for 1.0), **Should** (wanted for 1.0, may slip), **
 
 ## Non-functional requirements
 
-The budgets are measured on the reference machine (Linux x86-64, 8 GB RAM) by an automated benchmark in CI from M1 on. A PR that breaks a budget needs an ADR to change it. The first M1 spike measures the real Electron baseline. If these numbers turn out to be impossible, they are revised once, with the measurements, before M1 ends.
+The budgets are measured on the reference machine (Linux x86-64) by an automated benchmark in CI from M1 on: PSS summed over Crossbow's whole process tree. A PR that breaks a budget needs an ADR to change it. NFR-01 and NFR-04 were revised once after spike S1 measured the real Electron baseline ([ADR-0009](adr/0009-revised-footprint-budgets.md)).
 
 | ID | Requirement | Target |
 |---|---|---|
-| NFR-01 | Memory with the interface and one blank tab, default modules on | ≤ 180 MB total across processes |
+| NFR-01 | Memory with the interface and one blank tab, default modules on | ≤ 270 MB total PSS across processes ([ADR-0009](adr/0009-revised-footprint-budgets.md)) |
 | NFR-02 | Extra memory per sleeping tab | ≤ 1 MB (only its title, URL, favicon and scroll position are kept) |
 | NFR-03 | Installer size (Linux AppImage) | ≤ 110 MB |
-| NFR-04 | Installed size | ≤ 260 MB |
+| NFR-04 | Installed size | ≤ 275 MB ([ADR-0009](adr/0009-revised-footprint-budgets.md)) |
 | NFR-05 | Cold start to an interactive blank page | ≤ 1.0 s |
 | NFR-06 | Interface size: the chrome UI's own JavaScript and CSS | ≤ 150 KB minified, before compression |
 | NFR-07 | Edge panel opens within 16 ms (one frame) of the reveal delay ending | measured |

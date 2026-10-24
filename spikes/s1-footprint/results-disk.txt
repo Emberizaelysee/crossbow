@@ -1,0 +1,13 @@
+dist as shipped:            274 MB
+  locales/:                 8 MB
+  224	/home/coder/Downloads/crossbow/spikes/s1-footprint/../node_modules/electron/dist/electron
+  13	/home/coder/Downloads/crossbow/spikes/s1-footprint/../node_modules/electron/dist/resources.pak
+  11	/home/coder/Downloads/crossbow/spikes/s1-footprint/../node_modules/electron/dist/icudtl.dat
+  8	/home/coder/Downloads/crossbow/spikes/s1-footprint/../node_modules/electron/dist/locales
+  6	/home/coder/Downloads/crossbow/spikes/s1-footprint/../node_modules/electron/dist/LICENSES.chromium.html
+  5	/home/coder/Downloads/crossbow/spikes/s1-footprint/../node_modules/electron/dist/libvk_swiftshader.so
+  3	/home/coder/Downloads/crossbow/spikes/s1-footprint/../node_modules/electron/dist/libvulkan.so.1
+  3	/home/coder/Downloads/crossbow/spikes/s1-footprint/../node_modules/electron/dist/libffmpeg.so
+trimmed (installed size):   266 MB
+squashfs zstd-19 (AppImage): 107 MB
+squashfs xz:                101 MB

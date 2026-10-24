@@ -12,5 +12,7 @@ Each ADR records one decision: the context, the options, what we chose and what 
 | [0006](0006-lightweight-ui-stack.md) | TypeScript, Vite and SolidJS for the interface | Accepted |
 | [0007](0007-content-blocker-engine.md) | Ghostery's adblocker library for content blocking | Accepted |
 | [0008](0008-cross-workspace-sharing.md) | Only a cleaned URL crosses between workspaces | Accepted |
+| [0009](0009-revised-footprint-budgets.md) | Footprint budgets revised from S1 measurements | Proposed |
+| [0010](0010-frameless-window-and-hot-zones.md) | Frameless window, hot zones sized to the window state | Proposed (amends 0005) |
 
 New ADRs copy [template.md](template.md).
