@@ -1,6 +1,6 @@
 # ADR-0006: TypeScript, Vite and SolidJS for the interface
 
-- **Status:** Proposed
+- **Status:** Accepted (2026-10-24)
 - **Date:** 2026-10-24
 - **Requirements:** NFR-01, NFR-05, NFR-06
 

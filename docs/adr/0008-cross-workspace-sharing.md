@@ -1,6 +1,6 @@
 # ADR-0008: Only a cleaned URL crosses between workspaces
 
-- **Status:** Proposed
+- **Status:** Accepted (2026-10-24)
 - **Date:** 2026-10-24
 - **Requirements:** FR-30 to FR-33, FR-41
 

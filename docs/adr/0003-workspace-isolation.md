@@ -1,6 +1,6 @@
 # ADR-0003: Workspaces are sealed session partitions
 
-- **Status:** Proposed
+- **Status:** Accepted (2026-10-24)
 - **Date:** 2026-10-24
 - **Requirements:** FR-20 to FR-25, FR-47, FR-48
 

@@ -1,6 +1,6 @@
 # ADR-0007: Ghostery's adblocker library for content blocking
 
-- **Status:** Proposed
+- **Status:** Accepted (2026-10-24)
 - **Date:** 2026-10-24
 - **Requirements:** FR-40, FR-41, NFR-01, NFR-10
 

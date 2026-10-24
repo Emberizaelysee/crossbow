@@ -1,6 +1,6 @@
 # ADR-0004: A uniform fingerprint, on by default
 
-- **Status:** Proposed
+- **Status:** Accepted (2026-10-24)
 - **Date:** 2026-10-24
 - **Requirements:** FR-44, FR-48
 

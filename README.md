@@ -2,7 +2,7 @@
 
 **A privacy-first, browsing-first web browser.** The page gets the whole screen. Tabs, menus and tools stay hidden until your mouse reaches a screen edge. Your life is split into **workspaces** that are sealed from each other, and every feature is a **module** you can switch on or off.
 
-> **Status: M0, Foundations.** There is no code yet. This repository currently holds the vision, requirements, architecture and decision records for review. See the [roadmap](docs/roadmap.md).
+> **Status: M1, Shell and module host.** The foundations (vision, requirements, architecture, decision records) are accepted; the M1 spikes are under way. See the [roadmap](docs/roadmap.md).
 
 ## What makes it different
 

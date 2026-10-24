@@ -1,6 +1,6 @@
 # ADR-0005: Edge-reveal panels over a transparent overlay
 
-- **Status:** Proposed
+- **Status:** Accepted (2026-10-24)
 - **Date:** 2026-10-24
 - **Requirements:** FR-10 to FR-14, NFR-07, NFR-23
 

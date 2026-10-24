@@ -2,7 +2,7 @@
 
 Milestones are in order, without dates for now. Each one ends with a release you can run, and a check by the project owner against its exit criteria. The full backlog is in GitHub issues, seeded from [.github/backlog/](../.github/backlog/).
 
-## M0: Foundations *(this PR)*
+## M0: Foundations *(done, accepted 2026-10-24)*
 
 Vision, requirements, architecture, privacy model, ADRs, GitHub templates and backlog.
 

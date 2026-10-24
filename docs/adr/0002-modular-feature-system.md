@@ -1,6 +1,6 @@
 # ADR-0002: Every feature is a lazily loaded module
 
-- **Status:** Proposed
+- **Status:** Accepted (2026-10-24)
 - **Date:** 2026-10-24
 - **Requirements:** FR-01 to FR-05, NFR-20
 

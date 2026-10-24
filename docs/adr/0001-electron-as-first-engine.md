@@ -1,6 +1,6 @@
 # ADR-0001: Electron as the first engine, behind an adapter
 
-- **Status:** Proposed
+- **Status:** Accepted (2026-10-24)
 - **Date:** 2026-10-24
 - **Requirements:** NFR-01 to NFR-05, NFR-12, NFR-21, NFR-22
 
