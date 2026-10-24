@@ -119,10 +119,10 @@ Two fresh profiles and two window sizes per variant. Full table: [results.json](
 |---|---|---|---|---|
 | User agent | contains `Electron/45.0.0` | ✓ reduced Chrome UA | ✓ | ✓ native setting reaches workers |
 | Client hints (JS) | full version 156.0.8078.48, x86, 64-bit | ✗ unchanged | not patched yet | — |
-| Time zone | Asia/Beirut | ✓ UTC | ✓ | ✓ UTC |
+| Time zone | (real time zone, redacted) | ✓ UTC | ✓ | ✓ UTC |
 | Languages | en-US, en | ✓ | ✓ | ✓ |
 | Media devices | real device count | ✓ one of each kind once permission is denied | ✓ | — |
-| WebRTC local IP | **192.168.1.108** | ✓ replaced by a random mDNS name | ✓ | — |
+| WebRTC local IP | **(real LAN IP, redacted)** | ✓ replaced by a random mDNS name | ✓ | — |
 | hardwareConcurrency / deviceMemory | 20 / 32 | ✗ | ✓ 4 / 8 | **✗ leaks 20 / 32** |
 | Screen, available screen | real | ✗ | ✓ | — |
 | Canvas | machine hash | ✗ | ✓ blanked (`toDataURL` only; `getImageData` and `toBlob` not yet) | **✗ OffscreenCanvas untouched** |

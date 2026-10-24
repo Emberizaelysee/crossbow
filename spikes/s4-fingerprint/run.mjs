@@ -47,5 +47,10 @@ for (const v of variants) {
   const differing = Object.entries(rows).filter(([, r]) => !r.same).map(([k]) => k);
   console.log(v.padEnd(14), "differs between runs:", differing.join(", ") || "nothing");
 }
-writeFileSync(path.join(here, "results.json"), JSON.stringify(report, null, 2) + "\n");
+// results.json is committed: keep the machine's LAN address and time zone out of it.
+const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+const redacted = JSON.stringify(report, null, 2)
+  .replace(/\b(10|172|192)\.\d+\.\d+\.\d+\b/g, "(real LAN IP, redacted)")
+  .replaceAll(tz === "UTC" ? "\u0000" : tz, "(real time zone, redacted)");
+writeFileSync(path.join(here, "results.json"), redacted + "\n");
 console.log("wrote results.json");
