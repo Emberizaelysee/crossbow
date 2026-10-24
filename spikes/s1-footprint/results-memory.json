@@ -1,0 +1,56 @@
+{
+  "electron": "45.0.0",
+  "runs": 5,
+  "settleMs": 8000,
+  "results": {
+    "bare": {
+      "startMs": 167,
+      "pssMB": 229.9,
+      "ussMB": 112.6,
+      "rssMB": 643.8,
+      "processes": "browser:83 zygote:15 gpu-process:49 zygote:13 zygote:5 renderer:37 utility:27"
+    },
+    "ui": {
+      "startMs": 179,
+      "pssMB": 244,
+      "ussMB": 116.3,
+      "rssMB": 742.6,
+      "processes": "browser:84 zygote:14 gpu-process:47 zygote:12 zygote:4 renderer:28 renderer:29 utility:25"
+    },
+    "ui+no-spare": {
+      "startMs": 177,
+      "pssMB": 243.9,
+      "ussMB": 115.9,
+      "rssMB": 743.6,
+      "processes": "browser:81 zygote:14 gpu-process:48 zygote:12 zygote:4 renderer:29 renderer:29 utility:26"
+    },
+    "ui+no-spare+low-end": {
+      "startMs": 181,
+      "pssMB": 243.9,
+      "ussMB": 116.2,
+      "rssMB": 743.6,
+      "processes": "browser:85 zygote:14 gpu-process:47 zygote:12 zygote:4 renderer:29 renderer:29 utility:25"
+    },
+    "ui+net-in-process": {
+      "startMs": 179,
+      "pssMB": 236.1,
+      "ussMB": 109.3,
+      "rssMB": 663.6,
+      "processes": "browser:88 zygote:17 gpu-process:63 zygote:14 zygote:4 renderer:31 renderer:30"
+    },
+    "ui+blocker-ads": {
+      "startMs": 285,
+      "pssMB": 258.7,
+      "ussMB": 128.8,
+      "rssMB": 760,
+      "processes": "browser:96 zygote:14 gpu-process:47 zygote:12 zygote:4 renderer:32 renderer:29 utility:25"
+    },
+    "ui+blocker-full": {
+      "startMs": 294,
+      "pssMB": 261.1,
+      "ussMB": 130.9,
+      "rssMB": 760,
+      "processes": "browser:99 zygote:14 gpu-process:47 zygote:11 zygote:4 renderer:33 renderer:29 utility:25"
+    }
+  }
+}

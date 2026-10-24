@@ -1,0 +1,32 @@
+{
+  "google": {
+    "loaded": true,
+    "finalHost": "accounts.google.com",
+    "title": "Sign in - Google Accounts",
+    "warning": null
+  },
+  "microsoft": {
+    "loaded": true,
+    "finalHost": "login.live.com",
+    "title": "Sign in",
+    "warning": null
+  },
+  "github": {
+    "loaded": true,
+    "finalHost": "github.com",
+    "title": "Sign in to GitHub · GitHub",
+    "warning": null
+  },
+  "proton": {
+    "loaded": true,
+    "finalHost": "account.proton.me",
+    "title": "Proton Account: Sign-in",
+    "warning": null
+  },
+  "apple": {
+    "loaded": true,
+    "finalHost": "account.apple.com",
+    "title": "Manage your Apple Account",
+    "warning": null
+  }
+}

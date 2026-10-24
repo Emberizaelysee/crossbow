@@ -1,0 +1,9 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>S2 page</title>
+<style>body{margin:0;height:200vh;background:#f4f1ea;font:16px system-ui}</style>
+<p style="padding:40px">Test page. Clicks are counted.</p>
+<script>
+  let n = 0;
+  addEventListener("click", (e) => console.log(`CB_PAGE_CLICK ${++n} ${e.clientX},${e.clientY}`));
+</script>

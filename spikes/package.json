@@ -1,0 +1,11 @@
+{
+  "name": "crossbow-spikes",
+  "private": true,
+  "description": "M1 time-boxed spikes S1–S4. Throwaway code: not part of the product.",
+  "license": "MPL-2.0",
+  "type": "module",
+  "devDependencies": {
+    "@ghostery/adblocker-electron": "2.20.1",
+    "electron": "45.0.0"
+  }
+}

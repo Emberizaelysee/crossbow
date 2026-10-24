@@ -1,0 +1,953 @@
+{
+  "default": {
+    "userAgent": {
+      "same": true,
+      "values": [
+        "\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.48 Electron/45.0.0 Safari/537.36\""
+      ]
+    },
+    "uaClientHints.architecture": {
+      "same": true,
+      "values": [
+        "\"x86\""
+      ]
+    },
+    "uaClientHints.bitness": {
+      "same": true,
+      "values": [
+        "\"64\""
+      ]
+    },
+    "uaClientHints.brands": {
+      "same": true,
+      "values": [
+        "[{\"brand\":\"Not:A-Brand\",\"version\":\"8\"},{\"brand\":\"Chromium\",\"version\":\"156\"}]"
+      ]
+    },
+    "uaClientHints.fullVersionList": {
+      "same": true,
+      "values": [
+        "[{\"brand\":\"Not:A-Brand\",\"version\":\"8.0.0.0\"},{\"brand\":\"Chromium\",\"version\":\"156.0.8078.48\"}]"
+      ]
+    },
+    "uaClientHints.mobile": {
+      "same": true,
+      "values": [
+        "false"
+      ]
+    },
+    "uaClientHints.model": {
+      "same": true,
+      "values": [
+        "\"\""
+      ]
+    },
+    "uaClientHints.platform": {
+      "same": true,
+      "values": [
+        "\"Linux\""
+      ]
+    },
+    "uaClientHints.platformVersion": {
+      "same": true,
+      "values": [
+        "\"\""
+      ]
+    },
+    "uaClientHints.uaFullVersion": {
+      "same": true,
+      "values": [
+        "\"156.0.8078.48\""
+      ]
+    },
+    "languages": {
+      "same": true,
+      "values": [
+        "[\"en-US\",\"en\",\"en\"]"
+      ]
+    },
+    "timeZone": {
+      "same": true,
+      "values": [
+        "\"(real time zone, redacted)\""
+      ]
+    },
+    "screen": {
+      "same": true,
+      "values": [
+        "\"1600x900\""
+      ]
+    },
+    "availScreen": {
+      "same": true,
+      "values": [
+        "\"1600x868\""
+      ]
+    },
+    "window": {
+      "same": false,
+      "values": [
+        "\"1280x800\"",
+        "\"1500x950\""
+      ]
+    },
+    "devicePixelRatio": {
+      "same": true,
+      "values": [
+        "1"
+      ]
+    },
+    "colorDepth": {
+      "same": true,
+      "values": [
+        "24"
+      ]
+    },
+    "hardwareConcurrency": {
+      "same": true,
+      "values": [
+        "20"
+      ]
+    },
+    "deviceMemory": {
+      "same": true,
+      "values": [
+        "32"
+      ]
+    },
+    "platform": {
+      "same": true,
+      "values": [
+        "\"Linux x86_64\""
+      ]
+    },
+    "canvas": {
+      "same": true,
+      "values": [
+        "\"51b17e916db344fd\""
+      ]
+    },
+    "webgl.vendor": {
+      "same": true,
+      "values": [
+        "\"Google Inc. (Intel)\""
+      ]
+    },
+    "webgl.renderer": {
+      "same": true,
+      "values": [
+        "\"ANGLE (Intel, Mesa Intel(R) Iris(R) Xe Graphics (ADL GT2), OpenGL 4.6)\""
+      ]
+    },
+    "webgl.paramsHash": {
+      "same": true,
+      "values": [
+        "\"9ff9b871af00631d\""
+      ]
+    },
+    "audio": {
+      "same": true,
+      "values": [
+        "\"dfb9a309ebcfc4e4\""
+      ]
+    },
+    "fonts": {
+      "same": true,
+      "values": [
+        "[\"Arial\",\"Helvetica\",\"Times New Roman\",\"Courier New\",\"DejaVu Sans\",\"Liberation Sans\",\"Ubuntu\",\"Noto Sans\",\"Cantarell\",\"Calibri\",\"Roboto\",\"Comic Sans MS\",\"Noto Color Emoji\"]"
+      ]
+    },
+    "mediaDevices": {
+      "same": true,
+      "values": [
+        "[\"audioinput\",\"audioinput\",\"audioinput\",\"audioinput\",\"audioinput\",\"videoinput\",\"videoinput\",\"audiooutput\",\"audiooutput\",\"audiooutput\",\"audiooutput\",\"audiooutput\",\"audiooutput\",\"audiooutput\",\"audiooutput\"]"
+      ]
+    },
+    "localIps": {
+      "same": true,
+      "values": [
+        "[\"(real LAN IP, redacted)\"]"
+      ]
+    },
+    "worker.ua": {
+      "same": true,
+      "values": [
+        "\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.48 Electron/45.0.0 Safari/537.36\""
+      ]
+    },
+    "worker.hc": {
+      "same": true,
+      "values": [
+        "20"
+      ]
+    },
+    "worker.dm": {
+      "same": true,
+      "values": [
+        "32"
+      ]
+    },
+    "worker.langs": {
+      "same": true,
+      "values": [
+        "[\"en-US\",\"en\",\"en\"]"
+      ]
+    },
+    "worker.tz": {
+      "same": true,
+      "values": [
+        "\"(real time zone, redacted)\""
+      ]
+    },
+    "worker.gl": {
+      "same": true,
+      "values": [
+        "\"ANGLE (Intel, Mesa Intel(R) Iris(R) Xe Graphics (ADL GT2), OpenGL 4.6)\""
+      ]
+    },
+    "nativeLooking.Navigator.hardwareConcurrency": {
+      "same": true,
+      "values": [
+        "true"
+      ]
+    },
+    "nativeLooking.Navigator.languages": {
+      "same": true,
+      "values": [
+        "true"
+      ]
+    },
+    "nativeLooking.Screen.width": {
+      "same": true,
+      "values": [
+        "true"
+      ]
+    },
+    "nativeLooking.HTMLCanvasElement.toDataURL": {
+      "same": true,
+      "values": [
+        "true"
+      ]
+    },
+    "nativeLooking.WebGLRenderingContext.getParameter": {
+      "same": true,
+      "values": [
+        "true"
+      ]
+    }
+  },
+  "native": {
+    "userAgent": {
+      "same": true,
+      "values": [
+        "\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36\""
+      ]
+    },
+    "uaClientHints.architecture": {
+      "same": true,
+      "values": [
+        "\"x86\""
+      ]
+    },
+    "uaClientHints.bitness": {
+      "same": true,
+      "values": [
+        "\"64\""
+      ]
+    },
+    "uaClientHints.brands": {
+      "same": true,
+      "values": [
+        "[{\"brand\":\"Not:A-Brand\",\"version\":\"8\"},{\"brand\":\"Chromium\",\"version\":\"156\"}]"
+      ]
+    },
+    "uaClientHints.fullVersionList": {
+      "same": true,
+      "values": [
+        "[{\"brand\":\"Not:A-Brand\",\"version\":\"8.0.0.0\"},{\"brand\":\"Chromium\",\"version\":\"156.0.8078.48\"}]"
+      ]
+    },
+    "uaClientHints.mobile": {
+      "same": true,
+      "values": [
+        "false"
+      ]
+    },
+    "uaClientHints.model": {
+      "same": true,
+      "values": [
+        "\"\""
+      ]
+    },
+    "uaClientHints.platform": {
+      "same": true,
+      "values": [
+        "\"Linux\""
+      ]
+    },
+    "uaClientHints.platformVersion": {
+      "same": true,
+      "values": [
+        "\"\""
+      ]
+    },
+    "uaClientHints.uaFullVersion": {
+      "same": true,
+      "values": [
+        "\"156.0.8078.48\""
+      ]
+    },
+    "languages": {
+      "same": true,
+      "values": [
+        "[\"en-US\",\"en\",\"en\"]"
+      ]
+    },
+    "timeZone": {
+      "same": true,
+      "values": [
+        "\"UTC\""
+      ]
+    },
+    "screen": {
+      "same": true,
+      "values": [
+        "\"1600x900\""
+      ]
+    },
+    "availScreen": {
+      "same": true,
+      "values": [
+        "\"1600x868\""
+      ]
+    },
+    "window": {
+      "same": false,
+      "values": [
+        "\"1280x800\"",
+        "\"1500x950\""
+      ]
+    },
+    "devicePixelRatio": {
+      "same": true,
+      "values": [
+        "1"
+      ]
+    },
+    "colorDepth": {
+      "same": true,
+      "values": [
+        "24"
+      ]
+    },
+    "hardwareConcurrency": {
+      "same": true,
+      "values": [
+        "20"
+      ]
+    },
+    "deviceMemory": {
+      "same": true,
+      "values": [
+        "32"
+      ]
+    },
+    "platform": {
+      "same": true,
+      "values": [
+        "\"Linux x86_64\""
+      ]
+    },
+    "canvas": {
+      "same": true,
+      "values": [
+        "\"51b17e916db344fd\""
+      ]
+    },
+    "webgl.vendor": {
+      "same": true,
+      "values": [
+        "\"Google Inc. (Intel)\""
+      ]
+    },
+    "webgl.renderer": {
+      "same": true,
+      "values": [
+        "\"ANGLE (Intel, Mesa Intel(R) Iris(R) Xe Graphics (ADL GT2), OpenGL 4.6)\""
+      ]
+    },
+    "webgl.paramsHash": {
+      "same": true,
+      "values": [
+        "\"9ff9b871af00631d\""
+      ]
+    },
+    "audio": {
+      "same": true,
+      "values": [
+        "\"dfb9a309ebcfc4e4\""
+      ]
+    },
+    "fonts": {
+      "same": true,
+      "values": [
+        "[\"Arial\",\"Helvetica\",\"Times New Roman\",\"Courier New\",\"DejaVu Sans\",\"Liberation Sans\",\"Ubuntu\",\"Noto Sans\",\"Cantarell\",\"Calibri\",\"Roboto\",\"Comic Sans MS\",\"Noto Color Emoji\"]"
+      ]
+    },
+    "mediaDevices": {
+      "same": true,
+      "values": [
+        "[\"audioinput\",\"videoinput\",\"audiooutput\"]"
+      ]
+    },
+    "localIps": {
+      "same": false,
+      "values": [
+        "[\"7e4e1ca7-cabf-43ff-bfb0-e71007a74cdf.local\"]",
+        "[\"3e034459-cb6a-4732-9c4f-cd78417fe3e1.local\"]"
+      ]
+    },
+    "worker.ua": {
+      "same": true,
+      "values": [
+        "\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36\""
+      ]
+    },
+    "worker.hc": {
+      "same": true,
+      "values": [
+        "20"
+      ]
+    },
+    "worker.dm": {
+      "same": true,
+      "values": [
+        "32"
+      ]
+    },
+    "worker.langs": {
+      "same": true,
+      "values": [
+        "[\"en-US\",\"en\",\"en\"]"
+      ]
+    },
+    "worker.tz": {
+      "same": true,
+      "values": [
+        "\"UTC\""
+      ]
+    },
+    "worker.gl": {
+      "same": true,
+      "values": [
+        "\"ANGLE (Intel, Mesa Intel(R) Iris(R) Xe Graphics (ADL GT2), OpenGL 4.6)\""
+      ]
+    },
+    "nativeLooking.Navigator.hardwareConcurrency": {
+      "same": true,
+      "values": [
+        "true"
+      ]
+    },
+    "nativeLooking.Navigator.languages": {
+      "same": true,
+      "values": [
+        "true"
+      ]
+    },
+    "nativeLooking.Screen.width": {
+      "same": true,
+      "values": [
+        "true"
+      ]
+    },
+    "nativeLooking.HTMLCanvasElement.toDataURL": {
+      "same": true,
+      "values": [
+        "true"
+      ]
+    },
+    "nativeLooking.WebGLRenderingContext.getParameter": {
+      "same": true,
+      "values": [
+        "true"
+      ]
+    }
+  },
+  "uniform": {
+    "userAgent": {
+      "same": true,
+      "values": [
+        "\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36\""
+      ]
+    },
+    "uaClientHints.architecture": {
+      "same": true,
+      "values": [
+        "\"x86\""
+      ]
+    },
+    "uaClientHints.bitness": {
+      "same": true,
+      "values": [
+        "\"64\""
+      ]
+    },
+    "uaClientHints.brands": {
+      "same": true,
+      "values": [
+        "[{\"brand\":\"Not:A-Brand\",\"version\":\"8\"},{\"brand\":\"Chromium\",\"version\":\"156\"}]"
+      ]
+    },
+    "uaClientHints.fullVersionList": {
+      "same": true,
+      "values": [
+        "[{\"brand\":\"Not:A-Brand\",\"version\":\"8.0.0.0\"},{\"brand\":\"Chromium\",\"version\":\"156.0.8078.48\"}]"
+      ]
+    },
+    "uaClientHints.mobile": {
+      "same": true,
+      "values": [
+        "false"
+      ]
+    },
+    "uaClientHints.model": {
+      "same": true,
+      "values": [
+        "\"\""
+      ]
+    },
+    "uaClientHints.platform": {
+      "same": true,
+      "values": [
+        "\"Linux\""
+      ]
+    },
+    "uaClientHints.platformVersion": {
+      "same": true,
+      "values": [
+        "\"\""
+      ]
+    },
+    "uaClientHints.uaFullVersion": {
+      "same": true,
+      "values": [
+        "\"156.0.8078.48\""
+      ]
+    },
+    "languages": {
+      "same": true,
+      "values": [
+        "[\"en-US\",\"en\",\"en\"]"
+      ]
+    },
+    "timeZone": {
+      "same": true,
+      "values": [
+        "\"UTC\""
+      ]
+    },
+    "screen": {
+      "same": true,
+      "values": [
+        "\"1600x900\""
+      ]
+    },
+    "availScreen": {
+      "same": true,
+      "values": [
+        "\"1600x900\""
+      ]
+    },
+    "window": {
+      "same": false,
+      "values": [
+        "\"1280x800\"",
+        "\"1500x950\""
+      ]
+    },
+    "devicePixelRatio": {
+      "same": true,
+      "values": [
+        "1"
+      ]
+    },
+    "colorDepth": {
+      "same": true,
+      "values": [
+        "24"
+      ]
+    },
+    "hardwareConcurrency": {
+      "same": true,
+      "values": [
+        "4"
+      ]
+    },
+    "deviceMemory": {
+      "same": true,
+      "values": [
+        "8"
+      ]
+    },
+    "platform": {
+      "same": true,
+      "values": [
+        "\"Linux x86_64\""
+      ]
+    },
+    "canvas": {
+      "same": true,
+      "values": [
+        "\"222b690cf21b5729\""
+      ]
+    },
+    "webgl.vendor": {
+      "same": true,
+      "values": [
+        "\"Google Inc.\""
+      ]
+    },
+    "webgl.renderer": {
+      "same": true,
+      "values": [
+        "\"ANGLE (Generic)\""
+      ]
+    },
+    "webgl.paramsHash": {
+      "same": true,
+      "values": [
+        "\"9ff9b871af00631d\""
+      ]
+    },
+    "audio": {
+      "same": true,
+      "values": [
+        "\"dfb9a309ebcfc4e4\""
+      ]
+    },
+    "fonts": {
+      "same": true,
+      "values": [
+        "[\"Arial\",\"Helvetica\",\"Times New Roman\",\"Courier New\",\"DejaVu Sans\",\"Liberation Sans\",\"Ubuntu\",\"Noto Sans\",\"Cantarell\",\"Calibri\",\"Roboto\",\"Comic Sans MS\",\"Noto Color Emoji\"]"
+      ]
+    },
+    "mediaDevices": {
+      "same": true,
+      "values": [
+        "[\"audioinput\",\"videoinput\",\"audiooutput\"]"
+      ]
+    },
+    "localIps": {
+      "same": false,
+      "values": [
+        "[\"426cc8c4-bbf0-45ba-a79f-7398054da408.local\"]",
+        "[\"ad7e4b9f-9fae-4de3-910d-d66f2246e806.local\"]"
+      ]
+    },
+    "worker.ua": {
+      "same": true,
+      "values": [
+        "\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36\""
+      ]
+    },
+    "worker.hc": {
+      "same": true,
+      "values": [
+        "20"
+      ]
+    },
+    "worker.dm": {
+      "same": true,
+      "values": [
+        "32"
+      ]
+    },
+    "worker.langs": {
+      "same": true,
+      "values": [
+        "[\"en-US\",\"en\",\"en\"]"
+      ]
+    },
+    "worker.tz": {
+      "same": true,
+      "values": [
+        "\"UTC\""
+      ]
+    },
+    "worker.gl": {
+      "same": true,
+      "values": [
+        "\"ANGLE (Intel, Mesa Intel(R) Iris(R) Xe Graphics (ADL GT2), OpenGL 4.6)\""
+      ]
+    },
+    "nativeLooking.Navigator.hardwareConcurrency": {
+      "same": true,
+      "values": [
+        "false"
+      ]
+    },
+    "nativeLooking.Navigator.languages": {
+      "same": true,
+      "values": [
+        "true"
+      ]
+    },
+    "nativeLooking.Screen.width": {
+      "same": true,
+      "values": [
+        "false"
+      ]
+    },
+    "nativeLooking.HTMLCanvasElement.toDataURL": {
+      "same": true,
+      "values": [
+        "false"
+      ]
+    },
+    "nativeLooking.WebGLRenderingContext.getParameter": {
+      "same": true,
+      "values": [
+        "false"
+      ]
+    }
+  },
+  "uniform-swgl": {
+    "userAgent": {
+      "same": true,
+      "values": [
+        "\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36\""
+      ]
+    },
+    "uaClientHints.architecture": {
+      "same": true,
+      "values": [
+        "\"x86\""
+      ]
+    },
+    "uaClientHints.bitness": {
+      "same": true,
+      "values": [
+        "\"64\""
+      ]
+    },
+    "uaClientHints.brands": {
+      "same": true,
+      "values": [
+        "[{\"brand\":\"Not:A-Brand\",\"version\":\"8\"},{\"brand\":\"Chromium\",\"version\":\"156\"}]"
+      ]
+    },
+    "uaClientHints.fullVersionList": {
+      "same": true,
+      "values": [
+        "[{\"brand\":\"Not:A-Brand\",\"version\":\"8.0.0.0\"},{\"brand\":\"Chromium\",\"version\":\"156.0.8078.48\"}]"
+      ]
+    },
+    "uaClientHints.mobile": {
+      "same": true,
+      "values": [
+        "false"
+      ]
+    },
+    "uaClientHints.model": {
+      "same": true,
+      "values": [
+        "\"\""
+      ]
+    },
+    "uaClientHints.platform": {
+      "same": true,
+      "values": [
+        "\"Linux\""
+      ]
+    },
+    "uaClientHints.platformVersion": {
+      "same": true,
+      "values": [
+        "\"\""
+      ]
+    },
+    "uaClientHints.uaFullVersion": {
+      "same": true,
+      "values": [
+        "\"156.0.8078.48\""
+      ]
+    },
+    "languages": {
+      "same": true,
+      "values": [
+        "[\"en-US\",\"en\",\"en\"]"
+      ]
+    },
+    "timeZone": {
+      "same": true,
+      "values": [
+        "\"UTC\""
+      ]
+    },
+    "screen": {
+      "same": true,
+      "values": [
+        "\"1600x900\""
+      ]
+    },
+    "availScreen": {
+      "same": true,
+      "values": [
+        "\"1600x900\""
+      ]
+    },
+    "window": {
+      "same": false,
+      "values": [
+        "\"1280x800\"",
+        "\"1500x950\""
+      ]
+    },
+    "devicePixelRatio": {
+      "same": true,
+      "values": [
+        "1"
+      ]
+    },
+    "colorDepth": {
+      "same": true,
+      "values": [
+        "24"
+      ]
+    },
+    "hardwareConcurrency": {
+      "same": true,
+      "values": [
+        "4"
+      ]
+    },
+    "deviceMemory": {
+      "same": true,
+      "values": [
+        "8"
+      ]
+    },
+    "platform": {
+      "same": true,
+      "values": [
+        "\"Linux x86_64\""
+      ]
+    },
+    "canvas": {
+      "same": true,
+      "values": [
+        "\"222b690cf21b5729\""
+      ]
+    },
+    "webgl.vendor": {
+      "same": true,
+      "values": [
+        "\"Google Inc.\""
+      ]
+    },
+    "webgl.renderer": {
+      "same": true,
+      "values": [
+        "\"ANGLE (Generic)\""
+      ]
+    },
+    "webgl.paramsHash": {
+      "same": true,
+      "values": [
+        "\"a803a10f11fc7688\""
+      ]
+    },
+    "audio": {
+      "same": true,
+      "values": [
+        "\"dfb9a309ebcfc4e4\""
+      ]
+    },
+    "fonts": {
+      "same": true,
+      "values": [
+        "[\"Arial\",\"Helvetica\",\"Times New Roman\",\"Courier New\",\"DejaVu Sans\",\"Liberation Sans\",\"Ubuntu\",\"Noto Sans\",\"Cantarell\",\"Calibri\",\"Roboto\",\"Comic Sans MS\",\"Noto Color Emoji\"]"
+      ]
+    },
+    "mediaDevices": {
+      "same": true,
+      "values": [
+        "[\"audioinput\",\"videoinput\",\"audiooutput\"]"
+      ]
+    },
+    "localIps": {
+      "same": false,
+      "values": [
+        "[\"7869ff93-5c6f-46df-9beb-62904cfdbcfa.local\"]",
+        "[\"d6e406e7-f5cc-4933-9fe4-0dd9b468bad8.local\"]"
+      ]
+    },
+    "worker.ua": {
+      "same": true,
+      "values": [
+        "\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36\""
+      ]
+    },
+    "worker.hc": {
+      "same": true,
+      "values": [
+        "20"
+      ]
+    },
+    "worker.dm": {
+      "same": true,
+      "values": [
+        "32"
+      ]
+    },
+    "worker.langs": {
+      "same": true,
+      "values": [
+        "[\"en-US\",\"en\",\"en\"]"
+      ]
+    },
+    "worker.tz": {
+      "same": true,
+      "values": [
+        "\"UTC\""
+      ]
+    },
+    "worker.gl": {
+      "same": true,
+      "values": [
+        "\"ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)\""
+      ]
+    },
+    "nativeLooking.Navigator.hardwareConcurrency": {
+      "same": true,
+      "values": [
+        "false"
+      ]
+    },
+    "nativeLooking.Navigator.languages": {
+      "same": true,
+      "values": [
+        "true"
+      ]
+    },
+    "nativeLooking.Screen.width": {
+      "same": true,
+      "values": [
+        "false"
+      ]
+    },
+    "nativeLooking.HTMLCanvasElement.toDataURL": {
+      "same": true,
+      "values": [
+        "false"
+      ]
+    },
+    "nativeLooking.WebGLRenderingContext.getParameter": {
+      "same": true,
+      "values": [
+        "false"
+      ]
+    }
+  }
+}
