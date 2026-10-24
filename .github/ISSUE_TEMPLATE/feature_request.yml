@@ -1,0 +1,41 @@
+name: Feature request
+description: Suggest an idea or improvement
+title: "feat: "
+labels: ["type: feature", "status: triage"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What are you trying to do, and what gets in the way?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Should it be a new module, part of an existing module, or core? (See docs/adr/0002-modular-feature-system.md.)
+    validations:
+      required: true
+  - type: input
+    id: requirement
+    attributes:
+      label: Related requirement
+      description: Requirement ID from docs/requirements.md, if any
+      placeholder: FR-32
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options: [core, engine, ui, workspaces, privacy, performance, packaging, docs, not sure]
+    validations:
+      required: true
+  - type: textarea
+    id: cost
+    attributes:
+      label: Privacy and performance impact
+      description: Does it make network requests, store data, or cost memory? Everything in Crossbow has to fit the budgets in docs/requirements.md.
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered

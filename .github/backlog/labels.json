@@ -1,0 +1,19 @@
+[
+  {"name": "type: bug", "color": "d73a4a", "description": "Something isn't working"},
+  {"name": "type: feature", "color": "a2eeef", "description": "New capability"},
+  {"name": "type: spike", "color": "f9d0c4", "description": "Time-boxed technical experiment"},
+  {"name": "type: docs", "color": "0075ca", "description": "Documentation"},
+  {"name": "type: chore", "color": "cfd3d7", "description": "Tooling, CI, maintenance"},
+  {"name": "area: core", "color": "5319e7", "description": "Core, module host, services"},
+  {"name": "area: engine", "color": "5319e7", "description": "Engine adapter (Electron)"},
+  {"name": "area: ui", "color": "1d76db", "description": "Edge panels, palette, settings"},
+  {"name": "area: workspaces", "color": "0e8a16", "description": "Workspaces, tabs, tab groups, sharing"},
+  {"name": "area: privacy", "color": "b60205", "description": "Blocking, fingerprint, permissions, network"},
+  {"name": "area: performance", "color": "fbca04", "description": "Memory, disk and start-up budgets"},
+  {"name": "area: packaging", "color": "c5def5", "description": "Builds, installers, updates"},
+  {"name": "priority: must", "color": "b60205", "description": "Needed for 1.0"},
+  {"name": "priority: should", "color": "d93f0b", "description": "Wanted for 1.0"},
+  {"name": "priority: could", "color": "fef2c0", "description": "After 1.0"},
+  {"name": "status: triage", "color": "ededed", "description": "Needs a first look"},
+  {"name": "good first issue", "color": "7057ff", "description": "Good for newcomers"}
+]
