@@ -1,0 +1,7 @@
+[
+  {"title": "M0 — Foundations", "description": "Vision, requirements, architecture, privacy model, ADRs, templates and backlog. See docs/roadmap.md."},
+  {"title": "M1 — Shell and module host", "description": "Spikes S1–S4, scaffold, engine adapter, module host, tabs, edge panels, command palette, benchmark in CI."},
+  {"title": "M2 — Workspaces, tab groups and sharing", "description": "Sealed and disposable workspaces, tab groups, send to workspace, Shelf, network routes, session restore."},
+  {"title": "M3 — Privacy", "description": "Content blocker, URL cleaner, HTTPS-only, secure DNS, uniform fingerprint, permissions, privacy panel."},
+  {"title": "M4 — Daily driver (1.0)", "description": "History, bookmarks, downloads, tab sleep and archive, importer, updater, packages, accessibility."}
+]

@@ -1,0 +1,37 @@
+name: Spike
+description: Time-boxed technical experiment that answers one question
+title: "spike: "
+labels: ["type: spike"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: The single question this spike must answer
+    validations:
+      required: true
+  - type: textarea
+    id: method
+    attributes:
+      label: Method
+    validations:
+      required: true
+  - type: textarea
+    id: success
+    attributes:
+      label: Success criteria
+      description: Measurable thresholds that decide the outcome
+    validations:
+      required: true
+  - type: input
+    id: timebox
+    attributes:
+      label: Time-box
+      placeholder: 2 days
+    validations:
+      required: true
+  - type: textarea
+    id: downloads
+    attributes:
+      label: Downloads / dependencies needed
+      description: Packages or tools, with source, size and licence

@@ -1,0 +1,52 @@
+name: Bug report
+description: Something doesn't work as expected
+title: "bug: "
+labels: ["type: bug", "status: triage"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for reporting! Please check existing issues first. **Security or privacy leaks** go through private reporting instead (see SECURITY.md).
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options: [Edge panels / palette, Workspaces, Tabs / tab groups, Sharing / Shelf, Privacy (blocking, fingerprint, permissions), Performance (memory, start-up), A specific module, Installing / updating, Not sure]
+    validations:
+      required: true
+  - type: input
+    id: modules
+    attributes:
+      label: Modules involved
+      description: Does it still happen with that module turned off? Settings → Modules.
+      placeholder: content-blocker (bug disappears when off)
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open a workspace …
+        2. Move the mouse to …
+        3. See …
+    validations:
+      required: true
+  - type: textarea
+    id: env
+    attributes:
+      label: Environment
+      description: Crossbow version, OS and version, X11 / Wayland, desktop environment
+      placeholder: Crossbow 0.1.0 · Ubuntu 24.04 · Wayland · GNOME
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / screenshots
+      description: Crop screenshots to the Crossbow window and remove URLs or accounts you don't want public.
+      render: text

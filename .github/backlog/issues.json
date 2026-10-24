@@ -1,0 +1,362 @@
+[
+  {
+    "title": "spike: Electron footprint baseline (S1)",
+    "milestone": "M1 — Shell and module host",
+    "labels": [
+      "type: spike",
+      "area: performance",
+      "priority: must"
+    ],
+    "body": "Measure what a bare Electron 45 window plus one blank `WebContentsView` costs on Linux: total RSS/PSS across processes, installed size, AppImage size, cold start. Try the planned optimisations (locale stripping, ASAR, no DevTools extensions, Ghostery blocker loaded from serialized lists).\n\n**Time-box:** 2 days.\n\n**Refs:** docs/requirements.md (NFR-01–05), ADR-0001\n\n**Acceptance criteria**\n- [ ] Numbers for NFR-01 to NFR-05 committed under `spikes/s1-footprint/` with the script that produced them\n- [ ] Recommendation: keep, or revise the budgets once (with an ADR)"
+  },
+  {
+    "title": "spike: edge-reveal hot zones over WebContentsView (S2)",
+    "milestone": "M1 — Shell and module host",
+    "labels": [
+      "type: spike",
+      "area: ui",
+      "priority: must"
+    ],
+    "body": "Prototype a transparent UI overlay with 4 px hot zones above a page view; grow it to a panel on hover and shrink it back.\n\n**Time-box:** 2 days.\n\n**Refs:** ADR-0005\n\n**Acceptance criteria**\n- [ ] Works on X11 and Wayland (GNOME, KDE), Windows 11, macOS\n- [ ] Reveal latency and idle CPU measured\n- [ ] Fallback (cursor polling) evaluated if a platform fails"
+  },
+  {
+    "title": "spike: sign-in compatibility (S3)",
+    "milestone": "M1 — Shell and module host",
+    "labels": [
+      "type: spike",
+      "area: engine",
+      "priority: must"
+    ],
+    "body": "Check whether Google, Microsoft and one bank allow sign-in from an Electron browser with Crossbow's planned user agent and client hints.\n\n**Time-box:** 1 day.\n\n**Refs:** ADR-0001\n\n**Acceptance criteria**\n- [ ] Result per service recorded\n- [ ] Workarounds documented, or limitation added to privacy.md and README"
+  },
+  {
+    "title": "spike: uniform fingerprint feasibility (S4)",
+    "milestone": "M1 — Shell and module host",
+    "labels": [
+      "type: spike",
+      "area: privacy",
+      "priority: must"
+    ],
+    "body": "For every signal in docs/privacy.md's uniform table, find out whether Electron can set it natively, only through a main-world preload, or not at all. Test with CreepJS and Cover Your Tracks on two machines.\n\n**Time-box:** 3 days.\n\n**Refs:** FR-44, ADR-0004\n\n**Acceptance criteria**\n- [ ] Table of signals × method × result committed under `spikes/s4-fingerprint/`\n- [ ] privacy.md limits section updated\n- [ ] Go / no-go for ADR-0004"
+  },
+  {
+    "title": "chore: project scaffold (electron-vite, SolidJS, pnpm, lint, CI)",
+    "milestone": "M1 — Shell and module host",
+    "labels": [
+      "type: chore",
+      "area: core",
+      "priority: must"
+    ],
+    "body": "Set up the repo layout from docs/architecture/overview.md, strict TypeScript, ESLint with the import-boundary rules, Vitest, Playwright in Electron mode, and a GitHub Actions workflow for Linux, Windows and macOS.\n\n**Refs:** ADR-0001, ADR-0002, ADR-0006\n\n**Acceptance criteria**\n- [ ] `pnpm dev` opens an empty Crossbow window\n- [ ] Lint rule fails when `src/core` imports `electron` (NFR-21)\n- [ ] Lint rule fails when a module imports another module or core internals (NFR-20)\n- [ ] CI green on three platforms"
+  },
+  {
+    "title": "feat: engine adapter (Electron)",
+    "milestone": "M1 — Shell and module host",
+    "labels": [
+      "type: feature",
+      "area: engine",
+      "priority: must"
+    ],
+    "body": "Define the `Engine` interface and its Electron implementation: sessions, views, request hooks, permissions, downloads.\n\n**Refs:** NFR-21, architecture/overview.md#engine-adapter\n\n**Acceptance criteria**\n- [ ] Core compiles without Electron types\n- [ ] Unit tests against a fake engine"
+  },
+  {
+    "title": "feat: module host, manifests and service registry",
+    "milestone": "M1 — Shell and module host",
+    "labels": [
+      "type: feature",
+      "area: core",
+      "priority: must"
+    ],
+    "body": "Load manifests at start-up, lazy-`import()` enabled modules, resolve `requires`, track every registration through `ctx` and undo it on disable.\n\n**Refs:** FR-01–03, ADR-0002\n\n**Acceptance criteria**\n- [ ] A disabled module's code is never loaded (test checks the module graph)\n- [ ] Enable/disable live without restart for modules that allow it\n- [ ] Settings → Modules lists modules with description, cost and breakage"
+  },
+  {
+    "title": "feat: tabs in a single window",
+    "milestone": "M1 — Shell and module host",
+    "labels": [
+      "type: feature",
+      "area: core",
+      "priority: must"
+    ],
+    "body": "Open, close, switch, reorder and pin tabs; vertical tab list model; page fills the window.\n\n**Refs:** FR-10, FR-26\n\n**Acceptance criteria**\n- [ ] Page fills the window with no permanent toolbar (FR-10)\n- [ ] Keyboard shortcuts for new, close, next and previous tab"
+  },
+  {
+    "title": "feat: edge-reveal panels (left, top, right, bottom)",
+    "milestone": "M1 — Shell and module host",
+    "labels": [
+      "type: feature",
+      "area: ui",
+      "priority: must"
+    ],
+    "body": "Implement the four panels as UI slots and the `edge-reveal` module from the S2 result. Classic fixed layout when the module is off.\n\n**Refs:** FR-11, FR-12, ADR-0005\n\n**Acceptance criteria**\n- [ ] Reveal delay and hide grace configurable\n- [ ] Panels can be pinned\n- [ ] Hot zones off in HTML full screen\n- [ ] Every panel reachable from the keyboard (FR-12)"
+  },
+  {
+    "title": "feat: command palette (Ctrl+K)",
+    "milestone": "M1 — Shell and module host",
+    "labels": [
+      "type: feature",
+      "area: ui",
+      "priority: must"
+    ],
+    "body": "Fuzzy search across tabs, commands and module toggles; later sources (history, bookmarks, workspaces) plug in through the service registry.\n\n**Refs:** FR-13\n\n**Acceptance criteria**\n- [ ] Opens in under one frame after the key press\n- [ ] Modules can register commands"
+  },
+  {
+    "title": "chore: performance benchmark in CI",
+    "milestone": "M1 — Shell and module host",
+    "labels": [
+      "type: chore",
+      "area: performance",
+      "priority: must"
+    ],
+    "body": "Automate the S1 measurements and run them on every PR; fail when a budget is broken. Also measure each module's cost for its manifest.\n\n**Refs:** NFR-01–06\n\n**Acceptance criteria**\n- [ ] Report comment on PRs\n- [ ] Budgets from docs/requirements.md enforced"
+  },
+  {
+    "title": "chore: Linux AppImage build",
+    "milestone": "M1 — Shell and module host",
+    "labels": [
+      "type: chore",
+      "area: packaging",
+      "priority: must"
+    ],
+    "body": "Package with only needed locales, ASAR, compression.\n\n**Refs:** NFR-03, NFR-04\n\n**Acceptance criteria**\n- [ ] AppImage ≤ 110 MB (NFR-03)\n- [ ] Runs on Ubuntu 24.04 and Fedora"
+  },
+  {
+    "title": "feat: sealed workspaces",
+    "milestone": "M2 — Workspaces, tab groups and sharing",
+    "labels": [
+      "type: feature",
+      "area: workspaces",
+      "priority: must"
+    ],
+    "body": "One session per workspace with `session.fromPath`, per-workspace SQLite, lazy session creation, create/rename/recolour/icon/reorder/delete, switch with Ctrl+1…9.\n\n**Refs:** FR-20, FR-21, ADR-0003\n\n**Acceptance criteria**\n- [ ] E2E test: same site in two workspaces shares no cookies, storage, cache or service workers\n- [ ] Deleting a workspace removes its folder"
+  },
+  {
+    "title": "feat: disposable workspaces",
+    "milestone": "M2 — Workspaces, tab groups and sharing",
+    "labels": [
+      "type: feature",
+      "area: workspaces",
+      "priority: must"
+    ],
+    "body": "In-memory session and in-memory database; erased on close; never restored.\n\n**Refs:** FR-22\n\n**Acceptance criteria**\n- [ ] Test: nothing written under the profile folder while browsing in a disposable workspace"
+  },
+  {
+    "title": "feat: tab groups",
+    "milestone": "M2 — Workspaces, tab groups and sharing",
+    "labels": [
+      "type: feature",
+      "area: workspaces",
+      "priority: must"
+    ],
+    "body": "Named, coloured, collapsible groups within a workspace; drag tabs between groups; close a group; save and reopen a group.\n\n**Refs:** FR-27, FR-28\n\n**Acceptance criteria**\n- [ ] Group state survives restart\n- [ ] Saved group frees its tabs' memory"
+  },
+  {
+    "title": "feat: send tab or link to another workspace",
+    "milestone": "M2 — Workspaces, tab groups and sharing",
+    "labels": [
+      "type: feature",
+      "area: workspaces",
+      "priority: must"
+    ],
+    "body": "Context menu, drag onto a workspace, and palette command; move or copy; URL cleaning and token warning before crossing.\n\n**Refs:** FR-30, FR-31, ADR-0008\n\n**Acceptance criteria**\n- [ ] E2E test: no cookie, referrer or opener crosses\n- [ ] Token warning offers send / strip / cancel"
+  },
+  {
+    "title": "feat: Shelf module",
+    "milestone": "M2 — Workspaces, tab groups and sharing",
+    "labels": [
+      "type: feature",
+      "area: workspaces",
+      "priority: should"
+    ],
+    "body": "Global list of links shown in every workspace, stored in profile.sqlite, expiring after 7 days; copy-to-workspace for selected text and links.\n\n**Refs:** FR-32, FR-33, ADR-0008\n\n**Acceptance criteria**\n- [ ] Works with the system clipboard untouched\n- [ ] Expiry configurable"
+  },
+  {
+    "title": "feat: per-workspace network routes (direct, proxy, Tor)",
+    "milestone": "M2 — Workspaces, tab groups and sharing",
+    "labels": [
+      "type: feature",
+      "area: privacy",
+      "priority: should"
+    ],
+    "body": "`network-routes` module using `session.setProxy`; detect a local Tor service; WebRTC off on proxy and Tor routes.\n\n**Refs:** FR-23, FR-48\n\n**Acceptance criteria**\n- [ ] Two workspaces on different routes show different IPs\n- [ ] No WebRTC IP leak on proxy/Tor routes"
+  },
+  {
+    "title": "feat: session restore",
+    "milestone": "M2 — Workspaces, tab groups and sharing",
+    "labels": [
+      "type: feature",
+      "area: core",
+      "priority: must"
+    ],
+    "body": "Restore workspaces, tabs, groups and scroll positions after restart or crash; tabs restored asleep.\n\n**Refs:** FR-52\n\n**Acceptance criteria**\n- [ ] Crash test restores the previous state\n- [ ] Disposable workspaces never restored"
+  },
+  {
+    "title": "feat: workspace indicator line",
+    "milestone": "M2 — Workspaces, tab groups and sharing",
+    "labels": [
+      "type: feature",
+      "area: ui",
+      "priority: should"
+    ],
+    "body": "Thin coloured line along a chosen edge showing the current workspace colour.\n\n**Refs:** FR-14\n\n**Acceptance criteria**\n- [ ] Can be switched off and its edge chosen"
+  },
+  {
+    "title": "feat: per-workspace module settings",
+    "milestone": "M2 — Workspaces, tab groups and sharing",
+    "labels": [
+      "type: feature",
+      "area: core",
+      "priority: should"
+    ],
+    "body": "Modules with `scope: workspace` can be enabled per workspace; default search engine per workspace.\n\n**Refs:** FR-04, FR-24\n\n**Acceptance criteria**\n- [ ] Content blocker off in one workspace only works"
+  },
+  {
+    "title": "feat: content blocker module",
+    "milestone": "M3 — Privacy",
+    "labels": [
+      "type: feature",
+      "area: privacy",
+      "priority: must"
+    ],
+    "body": "`@ghostery/adblocker-electron` per session; EasyList + EasyPrivacy; serialized lists loaded at start-up; updates from Crossbow release assets built by a scheduled workflow.\n\n**Refs:** FR-40, ADR-0007\n\n**Acceptance criteria**\n- [ ] Fits NFR-01 and NFR-05 in the benchmark\n- [ ] No request to any host but the documented one"
+  },
+  {
+    "title": "feat: URL cleaner and HTTPS-only modules",
+    "milestone": "M3 — Privacy",
+    "labels": [
+      "type: feature",
+      "area: privacy",
+      "priority: must"
+    ],
+    "body": "Strip known tracking parameters on navigation; HTTPS-only interstitial for plain HTTP.\n\n**Refs:** FR-41, FR-42\n\n**Acceptance criteria**\n- [ ] Rule list unit-tested\n- [ ] Interstitial allows a per-site exception"
+  },
+  {
+    "title": "feat: secure DNS",
+    "milestone": "M3 — Privacy",
+    "labels": [
+      "type: feature",
+      "area: privacy",
+      "priority: should"
+    ],
+    "body": "DNS over HTTPS with selectable provider, chosen at first run; system resolver option.\n\n**Refs:** FR-43\n\n**Acceptance criteria**\n- [ ] Provider switch takes effect without restart"
+  },
+  {
+    "title": "feat: uniform fingerprint module",
+    "milestone": "M3 — Privacy",
+    "labels": [
+      "type: feature",
+      "area: privacy",
+      "priority: must"
+    ],
+    "body": "Implement profile `uniform-v1.json` from the S4 results: native settings first, main-world preload second, letterboxing; per-site and per-workspace relaxation.\n\n**Refs:** FR-44, ADR-0004\n\n**Acceptance criteria**\n- [ ] Two clean installs on the same platform produce the same CreepJS and Cover Your Tracks fingerprint (CI)\n- [ ] privacy.md table matches the implementation"
+  },
+  {
+    "title": "feat: strict permissions, third-party cookies and WebRTC protection",
+    "milestone": "M3 — Privacy",
+    "labels": [
+      "type: feature",
+      "area: privacy",
+      "priority: must"
+    ],
+    "body": "Deny-by-default permission handlers per workspace with a site permissions UI; block third-party cookies; WebRTC IP policy.\n\n**Refs:** FR-45, FR-47, FR-48\n\n**Acceptance criteria**\n- [ ] Permission prompts show the workspace name\n- [ ] No local IP visible on WebRTC leak tests"
+  },
+  {
+    "title": "feat: privacy panel and forget-this-site",
+    "milestone": "M3 — Privacy",
+    "labels": [
+      "type: feature",
+      "area: privacy",
+      "priority: should"
+    ],
+    "body": "Right-edge panel listing blocked requests, third parties, permissions, fingerprinting attempts and route; erase one site's data in the current workspace.\n\n**Refs:** FR-46, FR-49\n\n**Acceptance criteria**\n- [ ] Costs nothing while closed (listens to bus events only)"
+  },
+  {
+    "title": "chore: no-unexpected-requests check in CI",
+    "milestone": "M3 — Privacy",
+    "labels": [
+      "type: chore",
+      "area: privacy",
+      "priority: must"
+    ],
+    "body": "Run Crossbow at start-up and idle behind a recording proxy; fail on any request not in privacy.md's list.\n\n**Refs:** NFR-10, NFR-11\n\n**Acceptance criteria**\n- [ ] Runs on every PR"
+  },
+  {
+    "title": "feat: history and bookmarks per workspace",
+    "milestone": "M4 — Daily driver (1.0)",
+    "labels": [
+      "type: feature",
+      "area: core",
+      "priority: must"
+    ],
+    "body": "Stored in each workspace's database, searchable from the palette.\n\n**Refs:** FR-50\n\n**Acceptance criteria**\n- [ ] Never visible from another workspace"
+  },
+  {
+    "title": "feat: downloads panel",
+    "milestone": "M4 — Daily driver (1.0)",
+    "labels": [
+      "type: feature",
+      "area: ui",
+      "priority: must"
+    ],
+    "body": "Bottom-edge downloads panel, per workspace, with ask-where-to-save option.\n\n**Refs:** FR-51\n\n**Acceptance criteria**\n- [ ] Downloads in disposable workspaces cleaned from the list on close"
+  },
+  {
+    "title": "feat: tab sleep and tab archive modules",
+    "milestone": "M4 — Daily driver (1.0)",
+    "labels": [
+      "type: feature",
+      "area: performance",
+      "priority: must"
+    ],
+    "body": "Sleep idle tabs after 30 min and under memory pressure by destroying their view; archive tabs unvisited for 12 h.\n\n**Refs:** NFR-02, NFR-08, FR-29\n\n**Acceptance criteria**\n- [ ] Sleeping tab ≤ 1 MB (NFR-02)\n- [ ] Archived tabs searchable and restorable"
+  },
+  {
+    "title": "feat: PDF, find in page, zoom, print, full screen",
+    "milestone": "M4 — Daily driver (1.0)",
+    "labels": [
+      "type: feature",
+      "area: core",
+      "priority: must"
+    ],
+    "body": "Built-in browser essentials.\n\n**Refs:** FR-54, FR-55\n\n**Acceptance criteria**\n- [ ] Zoom remembered per site per workspace"
+  },
+  {
+    "title": "feat: bookmark importer",
+    "milestone": "M4 — Daily driver (1.0)",
+    "labels": [
+      "type: feature",
+      "area: core",
+      "priority: should"
+    ],
+    "body": "Import from Firefox, Chrome and HTML bookmark files into a chosen workspace.\n\n**Refs:** FR-53\n\n**Acceptance criteria**\n- [ ] Imports into the chosen workspace only"
+  },
+  {
+    "title": "feat: opt-in signed updates",
+    "milestone": "M4 — Daily driver (1.0)",
+    "labels": [
+      "type: feature",
+      "area: packaging",
+      "priority: must"
+    ],
+    "body": "Updater asked at first run; signed packages; CI builds a release automatically on each Electron security release.\n\n**Refs:** FR-56, NFR-12\n\n**Acceptance criteria**\n- [ ] Security release shipped within 7 days (NFR-12) — dry-run documented"
+  },
+  {
+    "title": "chore: packages for Linux, Windows and macOS",
+    "milestone": "M4 — Daily driver (1.0)",
+    "labels": [
+      "type: chore",
+      "area: packaging",
+      "priority: must"
+    ],
+    "body": "AppImage, deb, rpm, Windows installer, macOS dmg; reproducible build notes.\n\n**Refs:** NFR-03, NFR-04, NFR-22\n\n**Acceptance criteria**\n- [ ] Installed size ≤ 260 MB (NFR-04)"
+  },
+  {
+    "title": "chore: accessibility pass",
+    "milestone": "M4 — Daily driver (1.0)",
+    "labels": [
+      "type: chore",
+      "area: ui",
+      "priority: must"
+    ],
+    "body": "Keyboard access to every feature and screen-reader labels on every control.\n\n**Refs:** NFR-23\n\n**Acceptance criteria**\n- [ ] Checked with Orca on Linux"
+  }
+]

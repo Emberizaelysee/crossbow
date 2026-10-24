@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security or privacy vulnerability
+    url: https://github.com/Emberizaelysee/crossbow/security/advisories/new
+    about: Please report security and privacy leaks privately (see SECURITY.md).
+  - name: Questions and ideas
+    url: https://github.com/Emberizaelysee/crossbow/discussions
+    about: Ask questions or discuss ideas in GitHub Discussions.
